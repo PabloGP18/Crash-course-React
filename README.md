@@ -135,6 +135,7 @@ This are some differences between JSX and html:
 Pops(short word for properties) is the optional input that any component can accept. It allows the component content to be dynamic.
 
 The good thing about using component is that you can reuse them many times.
+Very important is that a props value can not be changed in the function.
 
 Here is an example how to use props to make the components reusable:
 
@@ -171,6 +172,30 @@ Then I retrieve the value of the children properties by calling it in the functi
 
 The children props are very useful when you have to compose new components from existing components.
 
+## State
+comparison between props and state:
+
+![img_20.png](img_20.png)
+
+Let's make an example of how state works in a component.
+
+![img_21.png](img_21.png)
+
+Here I make a component Message and I want to display a welcome message and change the message with a button.
+I can not do this with props. Once the message is set it can never be changed.
+
+So the solution is to use component state. 
+
+1) first I imported the useState from react.
+2) then I called the useState function in the component.
+3) useState return to value which you can store two constants of an array.
+4) I give the original message the name message and the one that is going to change onClick setMessage:  `const [message, setMessage]`
+5) between the parentheses you can give the initial state of the first constant (message):`useState('Welcome visitor')`
+6) Then I return the message `{message}` what will be the original message in the useState parentheses as show above.
+7) I put the H1 and button in a div tag because React can only return one wrapper element.
+8) Then on the button I add the onClick attribute. 
+9) Then I assign a handler: `onClick={() => setMessage('Thank you for subscribing')}`
+10) The setMessage function will update the message value of the original message and show thank you for subscribing on the click of the button.
 
 ## Available Scripts
 
