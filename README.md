@@ -124,6 +124,31 @@ In this case I export the Greet function at the function.
 
 And I have to import the component using curly brackets and using the same name as my function in the Greet component.
 
+## What is JSX?
+Jsx looks like html but it isn't. It's a syntax extension to javascript. In react, jsx is what describes how the UI should look like.
+It also comes with the full power of javascript library.
+
+This are some differences between JSX and html:
+![img_13.png](img_13.png)
+
+## Props
+Pops(short word for properties) is the optional input that any component can accept. It allows the component content to be dynamic.
+
+The good thing about using component is that you can reuse them many times.
+
+Here is an example how to use props to make the components reusable:
+
+![img_14.png](img_14.png)
+
+To specify a property for a component we specify them as attributes. In this case I want to specify a name prop, so I add a name attribute to Greet component in the App.js function?
+
+How do we retrieve the value of the Greet component:
+
+![img_15.png](img_15.png)
+
+In this case I add a parameter to the function component (props) and then I replace where before was a name with `{props.name}` this way we can retrieve the value of the attribute previously set in the App component.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
