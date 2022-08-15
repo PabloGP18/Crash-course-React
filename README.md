@@ -148,6 +148,29 @@ How do we retrieve the value of the Greet component:
 
 In this case I add a parameter to the function component (props) and then I replace where before was a name with `{props.name}` this way we can retrieve the value of the attribute previously set in the App component.
 
+Passing a number as a prop/attribute:
+
+![img_16.png](img_16.png)
+
+In case we need to pas a number and not a string, you need to put your number value in curly braces.
+
+![img_17.png](img_17.png)
+
+For the Greet component it's the same as before, you just give in prop and then the name(age) of the attribute set in App.js
+
+## Children props
+We can also pass unknown content using children props.
+
+![img_18.png](img_18.png)
+
+I specified some content(string and a button) between the opening en closing tag of the component. 
+
+![img_19.png](img_19.png)
+
+Then I retrieve the value of the children properties by calling it in the function`{props.children}`. But first you have to wrap the return in a div, otherwise it will not work.
+
+The children props are very useful when you have to compose new components from existing components.
+
 
 ## Available Scripts
 
