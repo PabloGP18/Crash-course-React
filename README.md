@@ -197,6 +197,41 @@ So the solution is to use component state.
 9) Then I assign a handler: `onClick={() => setMessage('Thank you for subscribing')}`
 10) The setMessage function will update the message value of the original message and show thank you for subscribing on the click of the button.
 
+Everytime a state changes, React will automatically update the state value.
+
+## Hooks
+Several examples of hooks
+
+![img_22.png](img_22.png)
+
+In this crash course I will be using useState, useEffect and useTransition.
+
+## Event Handling
+Every application we build typically tends to have user interaction.
+When the user interacts, events are fired.
+some examples of event handling:
+- mouse clicks
+- mouse over
+- key press
+- change event
+
+In the example I will focus on click events, but the concept holds good for other events as well.
+
+![img_23.png](img_23.png)
+
+1) You always have to use camelCase with React events.
+2) With jsx you pas a function as the event handler rather than a string: `onClick={clickHandler}`.
+3) Then I define the clickHandler function and then to the console that the button is clicked.
+4) The event handler in React automatically receives the event assets argument.
+5) But for the second example I add event as a parameter and log it to the console: ` function clickHandler(event)`.
+6) It's possible to add additional arguments to the event handler if necessary.
+7) In this example I make another button.
+8) This time the onclick handler will be an arrow function, I pass the event and also a value of 5: `onClick={(event) =>clickHandler(event, 5)}`.
+9) In the click handler definition we add a new parameter count with a default value of one en we log this to the console: `function clickHandler(event, count = 1) {
+   console.log("button clicked",count, event)}`.
+
+## Parent and child component communication
+
 ## Available Scripts
 
 In the project directory, you can run:
