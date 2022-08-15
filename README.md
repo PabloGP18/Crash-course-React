@@ -279,7 +279,7 @@ When you want to render something or nothing you make use of the short circuit o
 
 ![img_27.png](img_27.png)
 
-- we do that using &&
+- we do this using &&
 - What happens here `Welcome {isLoggedIn && 'PGP'}`, the expression evaluates the left hand side of the operator.
 In case it's true it will also evaluate the right hand side of the operator and will append pgp.
 - If the left side is false it will never evaluate the right side of the operator.
