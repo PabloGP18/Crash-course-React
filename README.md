@@ -261,6 +261,30 @@ First I make the ParentComponent with a function that greets with an alert and a
 ## Conditional rendering
 let's look at two common ways to conditionally render in React
 
+-The ternary operator:
+
+Want that the message is conditionally rendered based on the value of isLoggedIn.
+
+![img_26.png](img_26.png)
+
+- If you're logged in (variable = true) the message welcome pgp should be displayed otherwise it should display guest (false).
+- After welcome we add a pair of curly braces to evaluate a javascript expression.
+- We do this like this: `<div>Welcome {isLoggedIn ? 'Yes PGP' : 'Guest' }</div>`
+- So if it is true it will append Yes pgp, if it is false it will append guest.
+
+
+
+-The short circuit operator:
+When you want to render something or nothing you make use of the short circuit operator.
+
+![img_27.png](img_27.png)
+
+- we do that using &&
+- What happens here `Welcome {isLoggedIn && 'PGP'}`, the expression evaluates the left hand side of the operator.
+In case it's true it will also evaluate the right hand side of the operator and will append pgp.
+- If the left side is false it will never evaluate the right side of the operator.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
