@@ -1,11 +1,13 @@
 import './App.css';
 import {Greet} from './components/Greet'
 import {Message} from './components/Message';
+import {ClickHandler} from "./components/ClickHandler";
 
 function App() {
   return (
     <div className="App">
         <Message />
+        <ClickHandler />
       <Greet name="PGP" age={34} />
         <Greet name="Iron-man" age={58}>
             <button>Iron-button</button>
