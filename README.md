@@ -35,9 +35,15 @@ React is one of the most popular UI libraries and is well known in the job marke
  - public: this folders contains 6 files, but as a beginner you only need to focus on the index.html file. In this file normally you will not put any code.. You want React to control the UI true the `<div id="root"></div>`.
  - src: this is the folder where you will work the most during development =>
    - index.js:
-  ![img.png](img.png) The app component is rendered inside the root present in index.js.
+   
+  ![img.png](img.png)
+
+The app component is rendered inside the root present in index.js.
    - App.js:
-   ![img_1.png](img_1.png) The app component represents the view of the application.
+
+   ![img_1.png](img_1.png)
+
+The app component represents the view of the application.
 
 
 - And we also have 4 files:
@@ -56,11 +62,16 @@ React is one of the most popular UI libraries and is well known in the job marke
 In react a component represents a part of the user interface.
 A traditional website can be broken down into a header, sidenav, main content and a footer.
 Each section is represented by a component in react. All components when composed in the right way make up the entire website.
+
 ![img_2.png](img_2.png)
+
 We also have a component that contains all the four components. It is called as root component and is usually named as app component.
 Components are also reusable.
+
 ![img_3.png](img_3.png)
+
 The same component can be used with different properties to display different information. For example the sidenav component can be the left sidenav as well the right sidenav. The UI can remain the same but the content can change.
+
 ![img_4.png](img_4.png)
 
 ## Components
@@ -72,12 +83,16 @@ Functional components are newer and is pretty much what you need to learn in the
 
 ## Functional components
 Functional components are literally javascript functions. They may accept some input properties and return html witch describes the UI.
+
 ![img_5.png](img_5.png)
 
 
 ## making my first function component
 First I make a folder component and then I add a js file called Greet in the folder.
+
 ![img_6.png](img_6.png)
+
+
 Then in the Greet component I make a function Greet and return and h1 tag with content inside.
 I also export this function at the bottom of the function.
 
@@ -87,6 +102,28 @@ I also export this function at the bottom of the function.
 Then I import the Greet component in the App component and I put the Greet component between the div tags in the App function. The App component will render the Greet component and the App component will be rendered by the index.js file.
 
 ![img_8.png](img_8.png)
+
+## Differences between default and name exports
+The main difference is that if you use default export you can rename your import and call it whatever you want, and it still will work.
+
+Default export:
+
+![img_10.png](img_10.png)
+
+![img_9.png](img_9.png)
+
+In this example I call the import Blabla and I call it again in the App function and this will work and not break my application.
+
+Named export:
+
+![img_11.png](img_11.png)
+
+In this case I export the Greet function at the function.
+
+![img_12.png](img_12.png)
+
+And I have to import the component using curly brackets and using the same name as my function in the Greet component.
+
 ## Available Scripts
 
 In the project directory, you can run:
