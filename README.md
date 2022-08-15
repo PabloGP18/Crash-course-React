@@ -74,6 +74,19 @@ Functional components are newer and is pretty much what you need to learn in the
 Functional components are literally javascript functions. They may accept some input properties and return html witch describes the UI.
 ![img_5.png](img_5.png)
 
+
+## making my first function component
+First I make a folder component and then I add a js file called Greet in the folder.
+![img_6.png](img_6.png)
+Then in the Greet component I make a function Greet and return and h1 tag with content inside.
+I also export this function at the bottom of the function.
+
+![img_7.png](img_7.png)
+
+
+Then I import the Greet component in the App component and I put the Greet component between the div tags in the App function. The App component will render the Greet component and the App component will be rendered by the index.js file.
+
+![img_8.png](img_8.png)
 ## Available Scripts
 
 In the project directory, you can run:
