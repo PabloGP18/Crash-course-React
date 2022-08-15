@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Greet() {
+export function Greet() {
     return <h1>Hello PGP</h1>
 }
 
@@ -8,4 +8,5 @@ function Greet() {
 /*const Greet = () => {
     return <h1>Hello PGP</h1>
 }*/
-export default Greet;
+/*
+export default Greet;*/
