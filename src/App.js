@@ -3,6 +3,7 @@ import {Greet} from './components/Greet'
 import {Message} from './components/Message';
 import {ClickHandler} from "./components/ClickHandler";
 import {ParentComponent} from "./components/ParentComponent";
+import {UserGreeting} from "./components/UserGreeting";
 function App() {
   return (
     <div className="App">
@@ -15,7 +16,8 @@ function App() {
         <Greet name="Thor" age={42}>
             I'm the God of thunder, and also a children prop!
         </Greet> <br />
-        <ParentComponent />
+        <ParentComponent /> <br />
+        <UserGreeting />
     </div>
   );
 }
