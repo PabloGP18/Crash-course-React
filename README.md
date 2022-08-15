@@ -231,6 +231,35 @@ In the example I will focus on click events, but the concept holds good for othe
    console.log("button clicked",count, event)}`.
 
 ## Parent and child component communication
+What if the child component wants to communicate with the parent component?
+
+We will still have to use props, but this time we pass in a reference to a function as props to the child component.
+
+This example will explain how to do this:
+
+![img_24.png](img_24.png)
+![img_25.png](img_25.png)
+
+First I make the ParentComponent with a function that greets with an alert and a ChildComponent with a button.
+
+1) I include the ChildComponent in the ParentComponent.
+2) The ParentComponent I will include in the App component and add it in the jsx.
+3) What I now want, when i click on the button in the ChildComponent, I want to execute defined in the ParentComponent.
+4) This can we achieve using props. This time we will pass the function itself as a prop to the ChildComponent: `<ChildComponent greetHanlder={greetParent}`.
+5) I can now grab hold of our function in the ChildComponent.
+6) We specify props parameter: ` ChildComponent(props)` and on click of the button we call the prop `onClick={props.greetHanlder}`.
+7) So I have successfully called a function in the  ParentComponent from a button in the ChildComponent by passing the function as props to the ChildComponent
+8) Now let's see how to pass a parameter when calling the ParentComponent function from the ChildComponent. 
+9) So we convert the onClick handler into an arrow function: `onClick={() => props.greetHanlder()}`.
+10) Now I can pass in any number of parameters to the greetHanlder.
+11) I pass one argument with the string child: `onClick={() => props.greetHanlder('child')}`.
+12) Now I incorporate this argument in the greetParent function: `const greetParent = (childName)`.
+13) We specify childName as a parameter that is the argument from the string 'child' in the ChildComponent.
+14) Then we call this parameter in the alert statement: `alert(``Hello parent ${childName}``)`.
+15) So in this way we have successfully passed an argument from the ChildComponent to the ParentComponent.
+
+## Conditional rendering
+let's look at two common ways to conditionally render in React
 
 ## Available Scripts
 
