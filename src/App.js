@@ -1,9 +1,17 @@
 import './App.css';
+import './components/appStyles.css'
+import styles from './components/appStyles.module.css'
+
 import {Greet} from './components/Greet'
 import {Message} from './components/Message';
 import {ClickHandler} from "./components/ClickHandler";
 import {ParentComponent} from "./components/ParentComponent";
 import {UserGreeting} from "./components/UserGreeting";
+import {NameList} from "./components/NameList";
+import {StyleSheet} from './components/StyleSheet';
+import {Inline} from "./components/Inline";
+
+
 function App() {
   return (
     <div className="App">
@@ -17,7 +25,13 @@ function App() {
             I'm the God of thunder, and also a children prop!
         </Greet> <br />
         <ParentComponent /> <br />
-        <UserGreeting />
+        <UserGreeting /> <br />
+        <NameList /> <br />
+        <StyleSheet />  <br />
+        <Inline />  <br />
+
+        <h1 className="error">Error</h1>
+        <h1 className={styles.success}>Success</h1>
     </div>
   );
 }
