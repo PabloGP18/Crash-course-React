@@ -347,6 +347,25 @@ In this basic I'm going to show the basics with forms in React. I will show hot 
 9) Then we define this handler in a function. To prevent a submit refresh we call `event.preventDefault()`.
 10) In the next line we alert the username ` alert(`Form data is ${username}`)`.
 
+## ## HTTP GET & POST requests
+In this topic I will explain how React works with HTTP.
+
+With an example I'm going to make a GET request and how to make a POST request.
+
+To fetch data, we need to have an api endpoint. For this I will be using jsonplaceholder https://jsonplaceholder.typicode.com/. This is a free API for testing prototyping.
+In the Routes section I will be making a GET request to /post which will fetch an array of posts to display in the UI.
+
+Get Request Example:
+
+![img_37.png](img_37.png)
+Explanation will be added.
+Post Request Example:
+
+![img_38.png](img_38.png)
+Explanation will be added.
+
+## Transition hook
+
 ## Available Scripts
 
 In the project directory, you can run:
