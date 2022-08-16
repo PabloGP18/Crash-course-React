@@ -296,6 +296,40 @@ I'm going to use the javascript map method to append a list of names to the brow
 4) In this case {name} is like in javascript the innerHtml.
 5) We also add a key prop and assign an unique value `key={name}`. This will remove an error in the console
 
+## Styling React components
+There are a couple of options to style React components:
+
+![img_29.png](img_29.png)
+
+In this crash course I will only cover the first 3.
+
+- Css stylesheets
+
+![img_30.png](img_30.png)
+![img_31.png](img_31.png)
+
+1) First I will create a Stylesheet component and also add a stylesheet.css.
+2) I wil import the Css file to the stylesheet component.
+3) In the css file I create a file primary and give it the color orange .
+4) Then in the Stylesheet component I add a className and give it the name of primary `className="primary"` ,just like in the Css file.
+
+- Inline styling
+
+![img_32.png](img_32.png)
+
+1) To do inline styling we need to create an object and add properties: `    const heading ={ fontSize: '72px', color: 'blue' }`.
+2) The values are specified as a string.
+3) To apply this style you need the style attribute and assign the object (header) `style={heading}`
+
+- Css modules
+- 
+![img_33.png](img_33.png)
+![img_34.png](img_34.png)
+![img_35.png](img_35.png)
+
+1) For this one I create a css file called appStyles.module.css
+2) The import part for this css file is a little different, you need to call `styles from ....` to be able to use this file.
+3) Then the inline styling you can do adding styles and calling again the styles from React `className={styles.success}`.
 
 ## Available Scripts
 
