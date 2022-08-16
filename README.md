@@ -284,6 +284,18 @@ When you want to render something or nothing you make use of the short circuit o
 In case it's true it will also evaluate the right hand side of the operator and will append pgp.
 - If the left side is false it will never evaluate the right side of the operator.
 
+## displaying a list of items
+I'm going to use the javascript map method to append a list of names to the browser.
+
+![img_28.png](img_28.png)
+
+1) First I make a component NameList.
+2) Then I make a function NameList and in that function I declare an array of names.
+3) After that i will use the map method to go true the array and display this to the browser: ` names.map((name) =>{
+   return <h2>{name}</h2>`.
+4) In this case {name} is like in javascript the innerHtml.
+5) We also add a key prop and assign an unique value `key={name}`. This will remove an error in the console
+
 
 ## Available Scripts
 
