@@ -331,6 +331,22 @@ In this crash course I will only cover the first 3.
 2) The import part for this css file is a little different, you need to call `styles from ....` to be able to use this file.
 3) Then the inline styling you can do adding styles and calling again the styles from React `className={styles.success}`.
 
+## Forms
+In this basic I'm going to show the basics with forms in React. I will show hot to capture input html element and have the data available for form submission.
+
+![img_36.png](img_36.png)
+
+1) In this example I'm going to create a Form component.
+2) I make a Form function with inside a form element with inside a div and inside a div a label with username and an input tex field.
+3) To manage it with React I have to create a state variable to handle the value and change in value of this input element: ` const[username, setUsername] = useState('')`.
+4) Then in the input element I assign username to the value attribute `value={username}`.
+5) If you now try to type out in the input element, you're going to see that the input won't reflect the changes.
+6) We need a onChange event to handle the changes and update the userState variable wit setUsername: `onChange ={(event) => setUsername(event.target.value)`
+7) Next is trying to submit the form, so we add a submit button. The problem the page refreshes.
+8) On the form tag I'm going to assign a handler to the on submit event: `onSubmit={handleSubmit}`.
+9) Then we define this handler in a function. To prevent a submit refresh we call `event.preventDefault()`.
+10) In the next line we alert the username ` alert(`Form data is ${username}`)`.
+
 ## Available Scripts
 
 In the project directory, you can run:
